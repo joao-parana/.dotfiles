@@ -1,5 +1,7 @@
 stow
 kitty
+docker
+docker-compose
 firefox
 shellcheck
 google-chrome
