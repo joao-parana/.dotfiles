@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  postgres-test:
+    image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ~/.docker-volulmes/postgresql:/var/lib/postgresql/data
+    networks:
+      - postgres-test-network
+      
+  pgadmin-test:
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@cepel.br"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+    ports:
+      - "54320:80"
+    volumes:
+      - ~/.docker-volulmes/pgAdmin:/var/lib/pgadmin
+    depends_on:
+      - postgres-test
+    networks:
+      - postgres-test-network
+
+networks: 
+  postgres-test-network:
+    driver: bridge
