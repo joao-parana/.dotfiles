@@ -3,6 +3,7 @@ kitty
 docker
 docker-compose
 maven
+yarn
 firefox
 shellcheck
 google-chrome
