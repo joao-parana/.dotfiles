@@ -8,7 +8,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ~/.docker-volulmes/postgresql:/var/lib/postgresql/data
+      - ~/.docker-volumes/postgresql:/var/lib/postgresql/data
     networks:
       - postgres-test-network
       
@@ -16,11 +16,11 @@ services:
     image: dpage/pgadmin4:latest
     environment:
       PGADMIN_DEFAULT_EMAIL: "admin@cepel.br"
-      PGADMIN_DEFAULT_PASSWORD: "admin"
+      PGADMIN_DEFAULT_PASSWORD: "matrix"
     ports:
       - "54320:80"
     volumes:
-      - ~/.docker-volulmes/pgAdmin:/var/lib/pgadmin
+      - ~/.docker-volumes/pgAdmin:/var/lib/pgadmin
     depends_on:
       - postgres-test
     networks:

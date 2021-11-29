@@ -1,3 +1,3 @@
 #!/bin/bash
 
-code --install-extension - < code-extensions.list
+code --install-extension "$(cat code-extensions.list | tr "\n" " ")"
