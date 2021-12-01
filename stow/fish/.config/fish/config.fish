@@ -158,6 +158,10 @@ alias stowt='stow -vt ~ '
 
 alias unstow='stow -vDt ~ '
 
+alias cepel-vpn-1='sudo openfortivpn -c ~/dev/vpn/cepel-vpn-1'
+
+alias cepel-vpn-2='sudo openfortivpn -c ~/dev/vpn/cepel-vpn-2'
+
 
 
 ## Run paleofetch if session is interactive
