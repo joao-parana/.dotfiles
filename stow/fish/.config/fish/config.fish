@@ -154,6 +154,8 @@ alias soma-container='cd ~/dev/soma/soma-container'
 
 alias postgres-up='cd ~/dev/postgres && docker-compose up -d && cd - > /dev/null'
 
+alias postgres-stop='cd ~/dev/postgres && docker-compose stop && cd - > /dev/null'
+
 alias stowt='stow -vt ~ '
 
 alias unstow='stow -vDt ~ '
