@@ -1,8 +1,10 @@
 {
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "editor.fontFamily": "'FantasqueSansMono Nerd Font'",
     "editor.fontSize": 16.5,
     "editor.fontWeight": "bold",
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
