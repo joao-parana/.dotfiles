@@ -3,12 +3,14 @@
 1. Full system update
 2. Install packages from arch repos
 ```bash
-    sudo packages/install-apps.sh
-    packages/install-aur.sh
+    cd packages
+    sudo ./install-apps.sh
+    ./install-aur.sh
 ```
 3. Create dev folders and download misc software
 ```bash
-    sudo scripts/setup-dev.sh
+    cd scripts
+    ./setup-dev.sh
 ```
 4. Link configuration files
 ```bash
@@ -33,6 +35,3 @@
     git clone git@github.com:SOMA-App/soma-web-container.git (* verify scripts)
 ```
 9. Development servers - given the sensitive content of some files this step need to be completed manually for now
-
-
-
