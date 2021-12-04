@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pacman -Syu --needed "$(cat pkg.list | tr "\n" " ")"
+pacman -Syu --needed $(cat pkg.list | tr "\n" " ")
 
 groupadd docker
 
