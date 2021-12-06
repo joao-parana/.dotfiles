@@ -10,6 +10,7 @@
 3. Create dev folders and download misc software
 ```bash
     cd scripts
+    ./make-dirs.sh
     ./setup-dev.sh
 ```
 4. Link configuration files
@@ -20,7 +21,7 @@
 ```
 5. Create a new SSH key, upload it do github and test it.
 ```bash
-    scripts/create-ssh-keys.sh
+    scripts/create-ssh-keys.sh (might have to fix ~/.ssh/config)
     ssh -T git@github.com
 ```
 6. Install vscode extensions
