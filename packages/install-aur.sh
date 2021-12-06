@@ -5,4 +5,4 @@ if (( EUID == 0 )); then
    exit 100
 fi
 
-paru -S --needed $(cat aur.list | tr "\n" " ")
+paru -S --needed $(< aur.list tr "\n" " ")

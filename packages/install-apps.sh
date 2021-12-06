@@ -1,13 +1,13 @@
 #!/bin/bash
 
-pacman -Syu --needed $(cat pkg.list | tr "\n" " ")
+pacman -Syu --needed $(< pkg.list tr "\n" " ")
 
 groupadd docker
 
-usermod -aG docker $USER
+usermod -aG docker "$USER"
 
 echo "127.0.0.1 desktop.cepel.br" >> /etc/hosts
-echo "127.0.0.1 $hostname.cepel.br" >> /etc/hosts
+echo "127.0.0.1 $HOSTNAME.cepel.br" >> /etc/hosts
 
 #add 
 
