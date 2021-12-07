@@ -6,6 +6,7 @@
     cd packages
     sudo ./install-apps.sh
     ./install-aur.sh
+    ./fix-trackpad.sh (only needed with multi-touchs while libinput is sucking...)
 ```
 3. Create dev folders and download misc software
 ```bash
