@@ -6,7 +6,7 @@ echo "It will only work on X11!!"
 read -n1 -s -r -p $'Press ENTER to continue...\n' key
 
 if [ "$key" = '' ]; then
-    pacman -S -needed xf86-input-synaptics
+    pacman -S --needed xf86-input-synaptics
 else
     echo "Exiting!!!"
 fi
