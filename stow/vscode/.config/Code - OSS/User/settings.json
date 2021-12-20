@@ -6,5 +6,6 @@
     "editor.fontWeight": "bold",
     "window.zoomLevel": 1,
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.bracketPairColorization.enabled": true
 }
