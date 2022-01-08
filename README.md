@@ -20,10 +20,11 @@
     (probably needs a script to remove existing stuff)
     stow -vt ~ *
 ```
-5. Create a new SSH key, upload it do github and test it.
+5. Create a new SSH key, upload it do github and test it, after test fix the remote url to use ssh
 ```bash
     scripts/create-ssh-keys.sh (might have to fix ~/.ssh/config)
     ssh -T git@github.com
+    scripts/fix-remote.sh
 ```
 6. Install vscode extensions
 ```bash
