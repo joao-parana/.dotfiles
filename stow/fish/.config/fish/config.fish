@@ -164,7 +164,7 @@ alias cepel-vpn-1='sudo openfortivpn -c ~/dev/vpn/cepel-vpn-1'
 
 alias cepel-vpn-2='sudo openfortivpn -c ~/dev/vpn/cepel-vpn-2'
 
-
+alias eletrosul-vpn='sudo snx -s 177.10.114.1 -u cepel-soma'
 
 ## Run paleofetch if session is interactive
 #if status --is-interactive
