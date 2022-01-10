@@ -22,6 +22,7 @@ mkdir -p ~/dev/servers/aux/soma-home
 # Getting required software
 
 mkdir -p ~/dev/vpn
+mkdir -p ~/dev/postgres
 mkdir -p ~/dev/eclipse-workspace
 mkdir -p ~/dev/applications/tomcat
 mkdir -p ~/dev/applications/eclipse
