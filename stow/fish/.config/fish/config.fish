@@ -150,6 +150,8 @@ alias jctl="journalctl -p 3 -xb"
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
 
+alias wise-cow="cowsay (fortune)"
+
 alias soma-container='cd ~/dev/soma/soma-container'
 
 alias postgres-up='cd ~/dev/postgres && docker-compose up -d && cd - > /dev/null'
