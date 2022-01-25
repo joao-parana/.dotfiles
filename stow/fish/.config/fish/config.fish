@@ -154,6 +154,10 @@ alias wise-cow="cowsay (fortune)"
 
 alias soma-container='cd ~/dev/soma/soma-container'
 
+alias soma-docker="cd ~/dev/soma/soma-docker-playground"
+
+alias soma-standalone="cd ~/dev/soma/soma-standalone-container"
+
 alias postgres-up='cd ~/dev/postgres && docker-compose up -d && cd - > /dev/null'
 
 alias postgres-stop='cd ~/dev/postgres && docker-compose stop && cd - > /dev/null'
