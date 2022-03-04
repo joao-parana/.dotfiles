@@ -2,6 +2,8 @@
 
 pacman -Syu --needed $(< pkg.list tr "\n" " ")
 
+flatpak install flathub $(< flathub.list tr "\n" " ")
+
 groupadd docker
 
 usermod -aG docker "$USER"

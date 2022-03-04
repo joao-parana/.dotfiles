@@ -16,3 +16,5 @@ fortune-mod
 figlet
 cowsay
 cmatrix
+libvncserver
+flatpak

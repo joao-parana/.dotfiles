@@ -172,6 +172,8 @@ alias cepel-vpn-2='sudo openfortivpn -c ~/dev/vpn/cepel-vpn-2'
 
 alias eletrosul-vpn='sudo snx -s 177.10.114.1 -u cepel-soma'
 
+alias connect-home-server='ssh -i ~/.ssh/draf-server-home_key  draf@192.168.1.5'
+
 ## Run paleofetch if session is interactive
 #if status --is-interactive
 #   neofetch
