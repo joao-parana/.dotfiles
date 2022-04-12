@@ -174,6 +174,10 @@ alias eletrosul-vpn='sudo snx -s 177.10.114.1 -u cepel-soma'
 
 alias connect-home-server='ssh -i ~/.ssh/draf-server-home_key  draf@192.168.1.5'
 
+alias restart='~/.dotfiles/scripts/restart.sh'
+
+alias power-off='~/.dotfiles/scripts/power-off.sh'
+
 ## Run paleofetch if session is interactive
 #if status --is-interactive
 #   neofetch

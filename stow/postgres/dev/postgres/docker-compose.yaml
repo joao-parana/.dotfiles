@@ -8,7 +8,7 @@ services:
     ports:
       - "5432:5432"
     volumes:
-      - ~/.docker-volumes/postgresql:/var/lib/postgresql/data
+      - /database/postgresql:/var/lib/postgresql/data
     networks:
       - postgres-test-network
       
