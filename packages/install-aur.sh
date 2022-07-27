@@ -1,5 +1,17 @@
 #!/bin/bash
 
+set -euo pipefail
+
+CRT_DIR=$(pwd)
+
+cleanup() {
+   cd "$CRT_DIR" 
+}
+
+trap 'cleanup' EXIT
+
+cd "${0%/*}"
+
 if (( EUID == 0 )); then
    echo "AUR should not be accessed with root privileges!" 1>&2
    exit 100
