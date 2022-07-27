@@ -166,19 +166,12 @@ alias stowt='stow -vt ~ '
 
 alias unstow='stow -vDt ~ '
 
-alias cepel-vpn-1='sudo openfortivpn -c ~/dev/vpn/cepel-vpn-1'
-
-alias cepel-vpn-2='sudo openfortivpn -c ~/dev/vpn/cepel-vpn-2'
-
-alias eletrosul-vpn='sudo snx -s 177.10.114.1 -u cepel-soma'
-
 alias connect-home-server='ssh -i ~/.ssh/draf-server-home_key  draf@192.168.1.5'
 
 alias restart='~/.dotfiles/scripts/restart.sh'
 
 alias power-off='~/.dotfiles/scripts/power-off.sh'
 
-## Run paleofetch if session is interactive
-#if status --is-interactive
-#   neofetch
-#end
+if test -f ~/.config/fish/extra_configs.fish
+  source ~/.config/fish/extra_configs.fish
+end
