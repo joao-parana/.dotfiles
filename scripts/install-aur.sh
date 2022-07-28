@@ -17,7 +17,7 @@ if (( EUID == 0 )); then
    exit 100
 fi
 
-paru -S --needed $(< aur.list tr "\n" " ")
+paru -Sy --needed $(< aur.list tr "\n" " ")
 
 echo "Download the SNX install script from the upstream!"
 

@@ -12,7 +12,7 @@ trap 'cleanup' EXIT
 
 cd "${0%/*}"/../packages
 
-pacman -Syu --needed $(< pkg.list tr "\n" " ")
+pacman -Sy --needed $(< pkg.list tr "\n" " ")
 
 flatpak install flathub $(< flathub.list tr "\n" " ")
 
