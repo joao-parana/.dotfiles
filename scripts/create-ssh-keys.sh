@@ -1,12 +1,18 @@
 #!/bin/bash
 
-SERVICE_NAME='github'
+set -euo pipefail
 
-if [ -n "$1" ]; then 
-    SERVICE_NAME=$1
-fi
+CRT_DIR=$(pwd)
 
+cleanup() {
+   cd "$CRT_DIR" 
+}
 
-ssh-keygen -t ed25519 -C "dmarques2@gmail.com" -f "$HOME"/.ssh/"$USER"-"$SERVICE_NAME"_key
+trap 'cleanup' EXIT
+
+EMAIL=${1-'dmarques2@gmail.com'}
+SERVICE_NAME=${1-github}
+
+ssh-keygen -t ed25519 -C "$EMAIL" -f "$HOME"/.ssh/"$USER"-"$SERVICE_NAME"_key
 
 echo -e "KEY CREATED DO NOT FORGET TO UPLOAD THE PUBLIC PART!!!"

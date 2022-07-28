@@ -1,5 +1,15 @@
 #/bin/bash
 
+set -euo pipefail
+
+CRT_DIR=$(pwd)
+
+cleanup() {
+   cd "$CRT_DIR" 
+}
+
+trap 'cleanup' EXIT
+
 mkdir ~/.ssh
 
 mkdir -p ~/.config/kitty

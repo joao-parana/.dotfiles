@@ -10,7 +10,7 @@ cleanup() {
 
 trap 'cleanup' EXIT
 
-cd "${0%/*}"
+cd "${0%/*}"/../packages
 
 pacman -Syu --needed $(< pkg.list tr "\n" " ")
 

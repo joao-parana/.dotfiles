@@ -10,7 +10,7 @@ cleanup() {
 
 trap 'cleanup' EXIT
 
-cd "${0%/*}"
+cd "${0%/*}"/../packages
 
 if (( EUID == 0 )); then
    echo "AUR should not be accessed with root privileges!" 1>&2
