@@ -33,8 +33,8 @@ scripts/create-ssh-keys.sh "$EMAIL" "$SERVICE_NAME"
 
 read -n1 -s -r -p $'Upload public keys to GitHub/Lab!\nPress ANY key to continue...\n' key
 
-ssh -T git@github.com
-
 scripts/fix-remote.sh
 
 echo "Config done! To setup SOMA type 'scripts/create-soma-workspace.sh'"
+
+ssh -T git@github.com
