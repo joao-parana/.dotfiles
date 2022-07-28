@@ -35,6 +35,6 @@ read -n1 -s -r -p $'Upload public keys to GitHub/Lab!\nPress ANY key to continue
 
 scripts/fix-remote.sh
 
-echo "Config done! To setup SOMA type 'scripts/create-soma-workspace.sh'"
+echo -e "Config done! Test github connection with 'ssh -T git@github.com'.\nAnd to setup SOMA type 'scripts/create-soma-workspace.sh'"
 
-ssh -T git@github.com
+
