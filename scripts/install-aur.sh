@@ -29,4 +29,4 @@ mkdir -p ~/.cache/paru/clone/snx/
 
 cp ~/Downloads/snx_install_linux30.sh ~/.cache/paru/clone/snx/
 
-paru -S snx
+paru -S --needed snx

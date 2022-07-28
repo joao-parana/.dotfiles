@@ -22,3 +22,4 @@ mkdir -p ~/.local/share/applications/
 
 rm ~/.config/starship.toml
 rm ~/.config/fish/config.fish
+rm ~/.config/autostart/conky.desktop
