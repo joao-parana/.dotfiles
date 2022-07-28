@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euo pipefail
+set -eo pipefail
 
 CRT_DIR=$(pwd)
 
@@ -9,6 +9,8 @@ cleanup() {
 }
 
 trap 'cleanup' EXIT
+
+C_USER="$1"
 
 read -n1 -s -r -p $'At this point your GitHub access should be configured!\nPress ENTER to continue...\n' key
 
@@ -19,5 +21,5 @@ if [ "$key" = '' ]; then
     cd soma-dev-kit/stow
     stow -vt ~ *
     cd ..
-    scripts/setup-dev.sh
+    scripts/setup-dev.sh "$C_USER"
 fi
