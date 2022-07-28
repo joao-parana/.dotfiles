@@ -10,7 +10,7 @@ cleanup() {
 
 trap 'cleanup' EXIT
 
-mkdir ~/.ssh
+mkdir -p ~/.ssh
 
 mkdir -p ~/.config/kitty
 
