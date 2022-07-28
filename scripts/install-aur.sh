@@ -18,3 +18,15 @@ if (( EUID == 0 )); then
 fi
 
 paru -S --needed $(< aur.list tr "\n" " ")
+
+echo "Download the SNX install script from the upstream!"
+
+xdg-open 'https://aur.archlinux.org/packages/snx'
+
+read -n1 -s -r -p $'Press ANY key to continue...\n' key
+
+mkdir -p ~/.cache/paru/clone/snx/
+
+cp ~/Download/snx_install_linux30.sh ~/.cache/paru/clone/snx/
+
+paru -S snx
