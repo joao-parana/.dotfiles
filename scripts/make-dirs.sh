@@ -20,6 +20,14 @@ mkdir -p ~/.config/conky
 
 mkdir -p ~/.local/share/applications/
 
-rm ~/.config/starship.toml
-rm ~/.config/fish/config.fish
-rm ~/.config/autostart/conky.desktop
+if [ -f ~/.config/starship.toml ]; then
+   rm ~/.config/starship.toml
+fi
+
+if [ -f ~/.config/fish/config.fish ]; then
+   rm ~/.config/fish/config.fish
+fi
+
+if [ -f ~/.config/autostart/conky.desktop ]; then
+   rm ~/.config/autostart/conky.desktop
+fi
