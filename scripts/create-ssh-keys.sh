@@ -11,7 +11,7 @@ cleanup() {
 trap 'cleanup' EXIT
 
 EMAIL=${1-'dmarques2@gmail.com'}
-SERVICE_NAME=${1-github}
+SERVICE_NAME=${2-github}
 
 ssh-keygen -t ed25519 -C "$EMAIL" -f "$HOME"/.ssh/"$USER"-"$SERVICE_NAME"_key
 

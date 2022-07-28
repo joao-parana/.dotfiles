@@ -13,7 +13,7 @@ trap 'cleanup' EXIT
 cd "${0%/*}"/..
 
 EMAIL=${1-'dmarques2@gmail.com'}
-SERVICE_NAME=${1-github}
+SERVICE_NAME=${2-github}
 
 sudo scripts/install-apps.sh
 
