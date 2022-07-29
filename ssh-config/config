@@ -1,0 +1,9 @@
+Host bitbucket.org
+ HostName bitbucket.org
+ IdentityFile ~/.ssh/{user}-bitbucket_key
+Host gitlab.com
+ HostName gitlab.com
+ IdentityFile ~/.ssh/{user}-gitlab_key
+Host github.com
+ HostName github.com
+ IdentityFile ~/.ssh/{user}-github_key

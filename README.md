@@ -1,40 +1,17 @@
 # New machine config
 
 1. Full system update
-2. Install packages from arch repos
+2. Execute the environment setup script
 ```bash
-    cd packages
-    sudo ./install-apps.sh
-    ./install-aur.sh
-    ./fix-trackpad.sh (only needed with multi-touchs while libinput is sucking...)
+    ./scripts/setup-system.sh [e-mail]
+    ./scripts/fix-trackpad.sh (only needed with multi-touchs while libinput is sucking...)
 ```
-3. Create dev folders and download misc software
+During the execution of the 'setup-system.sh' script there will be a couple of interuptions
+   - SNX install you need to follow the upstream link and download the install script manually
+   - After key creations the public key needs to be uploaded to GitHub/Lab... w/e
+
+3. Create dev environment
 ```bash
-    cd scripts
-    ./make-dirs.sh
-    ./setup-dev.sh
+   scripts/create-soma-workspace.sh [cepel-user]
 ```
-4. Link configuration files
-```bash
-    cd stow
-    (probably needs a script to remove existing stuff)
-    stow -vt ~ *
-```
-5. Create a new SSH key, upload it do github and test it, after test fix the remote url to use ssh
-```bash
-    scripts/create-ssh-keys.sh (might have to fix ~/.ssh/config)
-    ssh -T git@github.com
-    scripts/fix-remote.sh
-```
-6. Install vscode extensions
-```bash
-    vscode/install-extensions.sh
-```
-7. Download eclipse and extract to ~/dev/applications/eclipse
-8. Clone soma projects
-```bash
-    cd ~/dev/soma/
-    git clone git@github.com:SOMA-App/soma-container.git
-    git clone git@github.com:SOMA-App/soma-web-container.git (* verify scripts)
-```
-9. Development servers - given the sensitive content of some files this step need to be completed manually for now
+
