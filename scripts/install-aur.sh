@@ -27,6 +27,12 @@ read -n1 -s -r -p $'Press ANY key to continue...\n' key
 
 mkdir -p ~/.cache/paru/clone/snx/
 
+set +e
+
+paru -S --needed snx
+
+set -e
+
 cp ~/Downloads/snx_install_linux30.sh ~/.cache/paru/clone/snx/
 
 paru -S --needed snx
