@@ -2,7 +2,7 @@
 Name=Eclipse
 Comment=JEE Development Environment
 Icon=eclipse
-Exec=~/dev/applications/eclipse/eclipse
+Exec=flatpak run org.eclipse.Java
 Terminal=false
 Type=Application
 Categories=Development;IDE;Java;
