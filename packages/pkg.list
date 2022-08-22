@@ -24,3 +24,4 @@ libvirt
 edk2-ovmf 
 dnsmasq 
 iptables-nft
+vagrant
