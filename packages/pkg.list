@@ -25,3 +25,4 @@ edk2-ovmf
 dnsmasq 
 iptables-nft
 vagrant
+ansible

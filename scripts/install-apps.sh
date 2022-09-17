@@ -14,6 +14,8 @@ cd "${0%/*}"/../packages
 
 pacman -Sy --needed $(< pkg.list tr "\n" " ")
 
+vagrant plugin install vagrant-libvirt
+
 flatpak install flathub $(< flathub.list tr "\n" " ")
 
 getent group docker || groupadd docker
