@@ -12,7 +12,7 @@ trap 'cleanup' EXIT
 
 cd "${0%/*}"/..
 
-EMAIL=${1-'dmarques2@gmail.com'}
+EMAIL=${1-'joao.parana@gmail.com'}
 
 echo "Installing applications from pacman..."
 
@@ -44,9 +44,9 @@ echo "SSH configuration..."
 
 scripts/create-ssh-keys.sh "$EMAIL" github
 
-scripts/create-ssh-keys.sh "$EMAIL" gitlab
+# scripts/create-ssh-keys.sh "$EMAIL" gitlab
 
-scripts/create-ssh-keys.sh "$EMAIL" bitbucket
+# scripts/create-ssh-keys.sh "$EMAIL" bitbucket
 
 read -n1 -s -r -p $'Upload public keys to GitHub/Lab!\nPress ANY key to continue...\n' key
 

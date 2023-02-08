@@ -12,15 +12,19 @@ trap 'cleanup' EXIT
 
 cd "${0%/*}"/../packages
 
+pwd
+
+set -x
+
 pacman -Sy --needed $(< pkg.list tr "\n" " ")
 
 vagrant plugin install vagrant-libvirt
 
-flatpak install flathub $(< flathub.list tr "\n" " ")
+# flatpak install flathub $(< flathub.list tr "\n" " ")
 
 getent group docker || groupadd docker
 
-usermod -aG docker "$USER"
+# usermod -aG docker "$USER"
 usermod -aG libvirt "$USER"
 
 echo "127.0.0.1 $HOSTNAME.cepel.br" >> /etc/hosts
