@@ -310,7 +310,7 @@ function draw_cpu(cr,x_pos,y_pos,r,g,b,transparency, number_of_cpus)
 	cairo_set_operator(cr, operator_transpose[mode])
 	cairo_set_source_rgba(cr,r,g,b,transparency)
 
-	local cpu_name = "Ryzen 5900X" 
+	local cpu_name = "Ryzen 7950X" 
 
 	local cm_text = cairo_text_extents_t:create()
 	cairo_set_font_size(cr,20)

@@ -34,6 +34,13 @@ if test -d ~/.cargo/bin
     end
 end
 
+# Add JBang to environment
+if test -d ~/.jbang/bin
+    if not contains -- ~/.jbang/bin $PATH
+        set -p PATH ~/.jbang/bin
+    end
+end
+
 # Add depot_tools to PATH
 if test -d ~/Applications/depot_tools
     if not contains -- ~/Applications/depot_tools $PATH
@@ -168,6 +175,8 @@ alias connect-home-server='ssh -i ~/.ssh/draf-server-home_key  draf@192.168.1.5'
 alias restart='~/.dotfiles/scripts/restart.sh'
 
 alias power-off='~/.dotfiles/scripts/power-off.sh'
+
+alias j!=jbang
 
 if test -f ~/.config/fish/extra_configs.fish
   source ~/.config/fish/extra_configs.fish
